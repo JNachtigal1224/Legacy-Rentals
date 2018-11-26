@@ -46,5 +46,15 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
