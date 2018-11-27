@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Application.Run(new Search());
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
