@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     class DataBase
     {
-        static string[] Scopes = {SheetsService.Scope.Spreadsheets};
+        static string[] Scopes = { SheetsService.Scope.Spreadsheets };
         static string ApplicationName = "Legacy Rentals DataBase";
 
         String spreadsheetId = "1YPcGEQC6DMhw6WX2Q13gLFpgPBOgpozA-ywmeZyHONk";
@@ -26,13 +26,13 @@ namespace WindowsFormsApp1
             {
                 string credPath = "token.json";
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    Scopes,
-                    "user",
-                    CancellationToken.None,
-                    new FileDataStore(credPath, true)
-                ).Result;
-            }
+                GoogleClientSecrets.Load(stream).Secrets,
+                        Scopes,
+                        "user",
+                        CancellationToken.None,
+                        new FileDataStore(credPath, true)
+                    ).Result;
+                }
 
             service = new SheetsService(new BaseClientService.Initializer()
             {

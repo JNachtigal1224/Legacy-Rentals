@@ -11,7 +11,6 @@ namespace WindowsFormsApp1
 
         static void Main()
         {
-
             IList<IList<Object>> values = database.readData("users!A2:A");
 
             database.deleteData("users!A2");
