@@ -21,9 +21,6 @@ namespace WindowsFormsApp1
         static string[] Scopes = { SheetsService.Scope.Spreadsheets };
         static string ApplicationName = "Legacy Rentals DataBase";
 
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -53,58 +50,42 @@ namespace WindowsFormsApp1
 
             // Define request parameters.
             String spreadsheetId = "1YPcGEQC6DMhw6WX2Q13gLFpgPBOgpozA-ywmeZyHONk";
-            String range = "users!A2:A";
-            SpreadsheetsResource.ValuesResource.GetRequest request =
-                    service.Spreadsheets.Values.Get(spreadsheetId, range);
 
-            ValueRange response = request.Execute();
-            IList<IList<Object>> values = response.Values;
-            if (values != null && values.Count > 0)
+            void writeData(String range, List<object> data)
             {
-                Console.WriteLine("userId, username");
-                foreach (var row in values)
+                var valueRange = new ValueRange();
+
+                valueRange.Values = new List<IList<object>> {data};
+
+                var appendRequest = service.Spreadsheets.Values.Append(valueRange, spreadsheetId, range);
+                appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;
+                var appendReponse = appendRequest.Execute();
+            }
+
+            void readData(String range)
+            {
+                var valueRange = new ValueRange();
+
+                var oblist = new List<object>() { "Hello!", "This", "was", "insertd", "via", "C#" };
+                valueRange.Values = new List<IList<object>> { oblist };
+
+                var getRequest = service.Spreadsheets.Values.Get(spreadsheetId, range);
+                var getReponse = getRequest.Execute();
+
+                IList<IList<Object>> values = getReponse.Values;
+                if (values != null && values.Count > 0)
                 {
-                    // Print columns A and E, which correspond to indices 0 and 4.
-                    Console.WriteLine("{0}, {1}", row[0], row[0]);
+                    Console.WriteLine("userId,username");
+                    foreach (var row in values)
+                    {
+                        Console.WriteLine("{0}, {1}", row[0], row[0]);
+                    }
                 }
+                Console.Read();
             }
-            else
-            {
-                Console.WriteLine("No data found.");
-            }
-            Console.Read();
 
-            //String range = "cars!A";
-
-            //Data.ValueRange requestBody = new Data.ValueRange();
-            //SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum valueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;  // TODO: Update placeholder value.
-
-            //SpreadsheetsResource.ValuesResource.AppendRequest request = 
-            //    service.Spreadsheets.Values.Append(requestBody, spreadsheetId, range);
-
-            //request.ValueInputOption = valueInputOption;
-
-            //ValueRange response = request.Execute();
-            //IList<IList<Object>> values = response.Values;
-            //if (values != null && values.Count > 0)
-            //{
-            //    Console.WriteLine("Name, Major");
-            //    foreach (var row in values)
-            //    {
-            //        Print columns A and E, which correspond to indices 0 and 4.
-            //       Console.WriteLine("{0}, {1}", row[0], row[4]);
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("No data found.");
-            //}
-            //Console.Read();
-
-            //request.execute();
-
-            // TODO: Change code below to process the `response` object:
-            //Console.Write(response);
+            readData("users!A2:A");
+            writeData("users!A2:A",new List<object>(){"984957","nancy_drew"});
 
             ////////////////////////////////////////////////////////////////////////////////////////
 
