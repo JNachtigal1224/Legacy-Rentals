@@ -10,18 +10,12 @@ C:\Users\crdangelo\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wind
 C:\Users\crdangelo\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
 C:\Users\crdangelo\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Search.resources
 C:\Users\crdangelo\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manage.resources
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Search.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manage.resources
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Google.Apis.Auth.dll
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Google.Apis.Auth.PlatformServices.dll
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Google.Apis.Core.dll
@@ -39,3 +33,13 @@ C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\Wi
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Google.Apis.Sheets.v4.xml
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LegacyRentals.exe.config
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LegacyRentals.exe
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LegacyRentals.pdb
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\LegacyRentals.Properties.Resources.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\LegacyRentals.exe
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\LegacyRentals.pdb
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LegacyRentals.exe.manifest
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\LegacyRentals.application
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\LegacyRentals.exe.manifest
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Web Application Prototype\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\LegacyRentals.application
