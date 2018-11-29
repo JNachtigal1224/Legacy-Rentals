@@ -64,7 +64,7 @@ namespace WindowsFormsApp1
         {
             var valueRange = new ValueRange();
 
-            valueRange.Values = new List<IList<object>> { data };
+            valueRange.Values = new List<IList<object>>{data};
 
             var updateRequest = service.Spreadsheets.Values.Update(valueRange, spreadsheetId, range);
             updateRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.UpdateRequest.ValueInputOptionEnum.USERENTERED;
@@ -90,9 +90,6 @@ namespace WindowsFormsApp1
         public IList<IList<Object>> readData(String range)
         {
             var valueRange = new ValueRange();
-
-            var oblist = new List<object>() { "Hello!", "This", "was", "insertd", "via", "C#" };
-            valueRange.Values = new List<IList<object>> { oblist };
 
             var getRequest = service.Spreadsheets.Values.Get(spreadsheetId, range);
             var getReponse = getRequest.Execute();

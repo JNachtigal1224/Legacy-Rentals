@@ -16,7 +16,9 @@ namespace WindowsFormsApp1
 
             database.deleteData("users!A2");
 
-            database.writeData("users!A2:A", new List<object>() { "984957", "nancy_drew" });
+            database.updateData("users!A2",new List<object>(){"911"});
+
+            database.writeData("users!A2:A",new List<object>(){"984957","nancy_drew"});
 
             //if (values != null && values.Count > 0)
             //{
