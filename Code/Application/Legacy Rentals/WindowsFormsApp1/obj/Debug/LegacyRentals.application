@@ -14,7 +14,11 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD:Code/Application/Legacy Rentals/WindowsFormsApp1/obj/Debug/LegacyRentals.application
         <dsig:DigestValue>ajRL+tLes7AD7ozCg0iX/MK0jWnklCOrVUkKYD0RBpg=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>dFwX+eRfN4+0VXxRpYIIqVGedM1RuE7oJDRAu+veSM8=</dsig:DigestValue>
+>>>>>>> parent of 6337051... new:Code/Application/WindowsFormsApp1/obj/Debug/LegacyRentals.application
       </hash>
     </dependentAssembly>
   </dependency>
