@@ -13,9 +13,11 @@ class Program
 
         //database.deleteData("users!A2");
 
-        Account.createAccount("dasingleton","David","Singleton","abc123");
+        Account.createAccount("dasingleton", "David", "Singleton", "abc123");
 
-        Account.updateBilling("dasingleton","1234567898765432","456");
+        Account.updateBilling("dasingleton", "1234567898765432", "456");
+
+        Account.updatePassword("dasingleton", "123xyz");
 
         //if (values != null && values.Count > 0)
         //{
