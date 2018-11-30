@@ -10,13 +10,13 @@ using System.Threading;
 
 class DataBase
 {
-    static string[] Scopes = { SheetsService.Scope.Spreadsheets };
-    static string ApplicationName = "Legacy Rentals DataBase";
+    private readonly static string[] Scopes = { SheetsService.Scope.Spreadsheets };
+    private readonly static string ApplicationName = "Legacy Rentals DataBase";
 
-    String spreadsheetId = "1YPcGEQC6DMhw6WX2Q13gLFpgPBOgpozA-ywmeZyHONk";
+    private readonly static String spreadsheetId = "1YPcGEQC6DMhw6WX2Q13gLFpgPBOgpozA-ywmeZyHONk";
 
-    static UserCredential credential;
-    static SheetsService service;
+    private static UserCredential credential;
+    private static SheetsService service;
 
     public DataBase()
     {
@@ -41,7 +41,7 @@ class DataBase
 
     //API Documentation
     //Method: readData(String range)
-    //String range: sheetName!Row:Column
+    //String range: sheetName!ColumnStart:ColumnEnd
     //RequestType: Reads all data provided in range starting at Row and going through the entire column
     public void writeData(String range, List<object> data)
     {
@@ -56,7 +56,7 @@ class DataBase
 
     //API Documentation
     //Method: readData(String range)
-    //String range: sheetName!Row:Column
+    //String range: sheetName!ColumnStart:ColumnEnd
     //RequestType: Reads all data provided in range starting at Row and going through the entire column
     public void updateData(String range, List<object> data)
     {
@@ -71,7 +71,7 @@ class DataBase
 
     //API Documentation
     //Method: deleteData(String range)
-    //String range: sheetName!Row:Column
+    //String range: sheetName!ColumnStart:ColumnEnd
     //RequestType: Deletes data at range
     public void deleteData(String range)
     {
@@ -83,7 +83,7 @@ class DataBase
 
     //API Documentation
     //Method: readData(String range)
-    //String range: sheetName!Row:Column
+    //String range: sheetName!ColumnStart:ColumnEnd
     //RequestType: Reads all data in range starting at Row and going through the entire column
     public IList<IList<Object>> readData(String range)
     {
@@ -92,10 +92,6 @@ class DataBase
         var getRequest = service.Spreadsheets.Values.Get(spreadsheetId, range);
         var getReponse = getRequest.Execute();
 
-        if(getReponse.Values == null)
-        {
-            return null;
-        }
         return getReponse.Values;
     }
 }

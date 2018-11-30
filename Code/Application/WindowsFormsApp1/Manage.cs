@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 class Manage
 {
 
-    DataBase database;
+    private static DataBase database = Program.database;
 
     public Manage()
     {

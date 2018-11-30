@@ -5,17 +5,23 @@ using System.Collections.Generic;
 class Program
 {
 
-    static DataBase database = new DataBase();
+    public static DataBase database = new DataBase();
 
     static void Main()
     {
-        IList<IList<Object>> values = database.readData("users!A2:A");
+        //IList<IList<Object>> values = database.readData("users!A2:A");
 
-        database.deleteData("users!A2");
+        //database.deleteData("users!A2");
 
-        database.updateData("users!A2",new List<object>(){"911"});
+        //database.updateData("users!A2",new List<object>(){"911"});
 
-        database.writeData("users!A2:A",new List<object>(){"984957","nancy_drew"});
+        //database.writeData("users!A2:A",new List<object>(){"984957","nancy_drew"});
+
+        foreach (var row in Account.fetchAccount("dasingleton"))
+        {
+            Console.WriteLine(row);
+        }
+        Console.Read();
 
         //if (values != null && values.Count > 0)
         //{

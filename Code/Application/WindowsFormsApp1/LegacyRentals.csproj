@@ -95,6 +95,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs" />
     <Compile Include="Manage.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="Home.cs">
