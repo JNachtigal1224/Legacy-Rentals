@@ -19,6 +19,8 @@ class Program
 
         Account.updatePassword("dasingleton", "123xyz");
 
+        Account.printAccount("dasingleton");
+
         //if (values != null && values.Count > 0)
         //{
         //    Console.WriteLine("userId,username");
