@@ -47,7 +47,7 @@ class DataBase
     {
         var valueRange = new ValueRange();
 
-        valueRange.Values = new List<IList<object>> { data };
+        valueRange.Values = new List<IList<object>>{data};
 
         var appendRequest = service.Spreadsheets.Values.Append(valueRange, spreadsheetId, range);
         appendRequest.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.USERENTERED;

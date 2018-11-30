@@ -13,15 +13,9 @@ class Program
 
         //database.deleteData("users!A2");
 
-        //database.updateData("users!A2",new List<object>(){"911"});
+        Account.createAccount("dasingleton","David","Singleton","abc123");
 
-        //database.writeData("users!A2:A",new List<object>(){"984957","nancy_drew"});
-
-        foreach (var row in Account.fetchAccount("dasingleton"))
-        {
-            Console.WriteLine(row);
-        }
-        Console.Read();
+        Account.updateBilling("dasingleton","1234567898765432","456");
 
         //if (values != null && values.Count > 0)
         //{
@@ -32,7 +26,6 @@ class Program
         //    }
         //}
         //Console.Read();
-
 
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);

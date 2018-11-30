@@ -10,15 +10,27 @@ class Account
 
     public static List<String> fetchAccount(String username)
     {
-        foreach (var row in database.readData("users!A2:E"))
+        int rowNumber = 2;
+        foreach (var row in database.readData("users!A2:F"))
         {
-            //Console.WriteLine("{0}, {1}", row[0], row[4]);
-            if (row[1].Equals(username))
+            if (row[0].Equals(username))
             {
-                return new List<String> {row[0].ToString(),row[1].ToString(),row[2].ToString(),row[3].ToString()};
+                return new List<String> {rowNumber.ToString(),row[0].ToString(),row[1].ToString(),row[2].ToString(),row[3].ToString()};
             }
+            rowNumber++;
         }
-        Console.Read();
-        return new List<String> { "", "", "", "" };
+        return null;
     }
+
+    public static void createAccount(String username, String firstName, String lastName, String password)
+    {
+        database.writeData("users!A2",new List<object>() {username, firstName, lastName, password});
+    }
+
+    public static void updateBilling(String username, String cardNumber, String securityCode)
+    {
+        String range = "users!" + "E" + Account.fetchAccount(username)[0] + ":F";
+        database.updateData(range, new List<object>() {cardNumber,securityCode});
+    }
+
 }
