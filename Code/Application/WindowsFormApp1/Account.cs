@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 class Account
 {
@@ -19,15 +22,6 @@ class Account
         return null;
     }
 
-    public static void printAccount(String username)
-    {
-        var account = Account.fetchAccount("dasingleton");
-        Console.WriteLine("username: " + account[1]);
-        Console.WriteLine("first name: " + account[2]);
-        Console.WriteLine("last name: " + account[3]);
-        Console.Read();
-    }
-
     public static void createAccount(String username, String firstName, String lastName, String password)
     {
         if(Account.fetchAccount(username) == null)
@@ -35,7 +29,7 @@ class Account
             database.writeData("users!A2", new List<object>() { username, firstName, lastName, password });
         }
     }
-     
+
     public static void updateBilling(String username, String cardNumber, String securityCode)
     {
         String range = "users!" + "E" + Account.fetchAccount(username)[0] + ":F";
