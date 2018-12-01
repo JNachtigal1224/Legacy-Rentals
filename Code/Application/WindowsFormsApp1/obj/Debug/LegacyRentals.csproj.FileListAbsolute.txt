@@ -67,7 +67,6 @@ C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\Legacy Rentals\W
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.csprojAssemblyReference.cache
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Search.resources
-C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Manage.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.Properties.Resources.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.csproj.GenerateResource.cache
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.csproj.CoreCompileInputs.cache
@@ -135,3 +134,9 @@ C:\Users\crdangelo\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsForms
 C:\Users\crdangelo\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.ChangeItemPage.resources
 C:\Users\crdangelo\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.ConfirmRequestPage.resources
 C:\Users\crdangelo\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.RemoveItemPage.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.AddCarPage.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.ChangeItemPage.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.ConfirmRequestPage.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.RemoveItemPage.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.SearchResults.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManagePage.resources

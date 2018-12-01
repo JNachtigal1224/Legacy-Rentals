@@ -15,7 +15,14 @@ class Account
             {
                 if (row[0].Equals(username))
                 {
-                    return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[4].ToString(), row[5].ToString() };
+                    if (row.Count < 5)
+                    {
+                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString() };
+                    }
+                    else
+                    {
+                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[4].ToString(), row[5].ToString() };
+                    }
                 }
                 rowNumber++;
             }
