@@ -9,4 +9,10 @@ class Manage
     {
         Car.addCar(carId);
     }
+
+    public static void removeCar(String carId)
+    {
+        Car.removeCar(carId);
+    }
+
 }

@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Manage.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="Home.cs">

@@ -26,4 +26,13 @@ class Car
             database.writeData("cars!A2", new List<object>() { carId });
         }
     }
+
+    public static void removeCar(String carId)
+    {
+        if (Car.fetchCar(carId) == null)
+        {
+            database.updateData("cars!A2", new List<object>() { carId });
+        }
+    }
+
 }
