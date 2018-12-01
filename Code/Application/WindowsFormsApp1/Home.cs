@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
         {
 
             this.Visible = false;
-            Search s = new Search();
+            Search s = new Search(this);
             s.Visible = true;
 
         }
@@ -49,6 +49,9 @@ namespace WindowsFormsApp1
         private void button1_Click_2(object sender, EventArgs e)
         {
 
+            this.Visible = false;
+            ManagePage m = new ManagePage(this);
+            m.Visible = true;
         }
 
         private void button1_Click_3(object sender, EventArgs e)

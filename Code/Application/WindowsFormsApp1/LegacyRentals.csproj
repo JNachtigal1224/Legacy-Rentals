@@ -97,6 +97,36 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="AddCarPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCarPage.Designer.cs">
+      <DependentUpon>AddCarPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmRequestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmRequestPage.Designer.cs">
+      <DependentUpon>ConfirmRequestPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveItemPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveItemPage.Designer.cs">
+      <DependentUpon>RemoveItemPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeItemPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeItemPage.Designer.cs">
+      <DependentUpon>ChangeItemPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchResults.Designer.cs">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manage.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="Home.cs">
@@ -119,6 +149,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCarPage.resx">
+      <DependentUpon>AddCarPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeItemPage.resx">
+      <DependentUpon>ChangeItemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmRequestPage.resx">
+      <DependentUpon>ConfirmRequestPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveItemPage.resx">
+      <DependentUpon>RemoveItemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchResults.resx">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>

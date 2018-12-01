@@ -30,7 +30,7 @@
         {
             this.searchButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.manageButton = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.signInButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -41,7 +41,6 @@
             this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -56,12 +55,12 @@
             this.searchButton.TabIndex = 3;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.manageButton);
             this.panel1.Controls.Add(this.signInButton);
             this.panel1.Controls.Add(this.homeButton);
             this.panel1.Location = new System.Drawing.Point(0, 1);
@@ -69,14 +68,16 @@
             this.panel1.Size = new System.Drawing.Size(802, 50);
             this.panel1.TabIndex = 2;
             // 
-            // manageButton
+            // label5
             // 
-            this.manageButton.Location = new System.Drawing.Point(110, 3);
-            this.manageButton.Name = "manageButton";
-            this.manageButton.Size = new System.Drawing.Size(93, 44);
-            this.manageButton.TabIndex = 3;
-            this.manageButton.Text = "Manage";
-            this.manageButton.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(612, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Hello, User";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // signInButton
             // 
@@ -86,6 +87,7 @@
             this.signInButton.TabIndex = 1;
             this.signInButton.Text = "Sign Out";
             this.signInButton.UseVisualStyleBackColor = true;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
             // homeButton
             // 
@@ -95,6 +97,7 @@
             this.homeButton.TabIndex = 0;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = true;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // textBox1
             // 
@@ -167,17 +170,6 @@
             this.comboBox1.Size = new System.Drawing.Size(187, 21);
             this.comboBox1.TabIndex = 11;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(612, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Hello, User";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(371, 315);
@@ -186,6 +178,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Find My Car!";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Search
             // 
@@ -221,7 +214,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.Button homeButton;
-        private System.Windows.Forms.Button manageButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar trackBar1;

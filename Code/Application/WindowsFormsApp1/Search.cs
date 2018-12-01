@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LegacyRentals;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace WindowsFormsApp1
 {
     public partial class Search : Form
     {
-        public Search()
+
+        Home _homepage;
+
+        public Search(Home h)
         {
             InitializeComponent();
+            _homepage = h;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,6 +33,35 @@ namespace WindowsFormsApp1
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            _homepage.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            SearchResults s = new SearchResults(_homepage, this);
+            s.Visible = true;
+        }
+
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signInButton_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            _homepage.Visible = true;
+        }
+
+        private void manageButton_Click(object sender, EventArgs e)
         {
 
         }

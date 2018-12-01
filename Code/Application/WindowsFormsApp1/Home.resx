@@ -123,10 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1676, 12</value>
+    <value>690, 4</value>
+  </data>
+  <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 75</value>
+    <value>82, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
@@ -151,13 +154,10 @@
     <value>Arial Black, 8.1pt, style=Bold</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2403, 24</value>
-  </data>
-  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 7, 8, 7</value>
+    <value>989, 9</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 69</value>
+    <value>100, 26</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -178,13 +178,10 @@
     <value>1</value>
   </data>
   <data name="manageButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 7</value>
-  </data>
-  <data name="manageButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 7, 8, 7</value>
+    <value>121, 3</value>
   </data>
   <data name="manageButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 105</value>
+    <value>102, 39</value>
   </data>
   <data name="manageButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -205,13 +202,10 @@
     <value>2</value>
   </data>
   <data name="homeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 7</value>
-  </data>
-  <data name="homeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 7, 8, 7</value>
+    <value>13, 3</value>
   </data>
   <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 105</value>
+    <value>101, 39</value>
   </data>
   <data name="homeButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -238,7 +232,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1920, 100</value>
+    <value>791, 48</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -256,13 +250,10 @@
     <value>1</value>
   </data>
   <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 190</value>
-  </data>
-  <data name="searchButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 7, 8, 7</value>
+    <value>305, 71</value>
   </data>
   <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>491, 93</value>
+    <value>202, 35</value>
   </data>
   <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -286,13 +277,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>17, 32</value>
+    <value>7, 12</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1888, 992</value>
+    <value>564, 281</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Rounded MT Bold, 8.1pt</value>
@@ -4894,9 +4885,6 @@
         AP///////////////8D////////////////+AAAAAAAf////////////////wP/////////////////4
         AAAAB//////////////////A
 </value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 7, 8, 7</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Legacy Rentals</value>

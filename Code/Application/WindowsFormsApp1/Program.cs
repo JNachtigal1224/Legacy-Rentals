@@ -10,13 +10,13 @@ class Program
 
     static void Main()
     {
-        Account.createAccount("dasingleton", "David", "Singleton", "abc123");
+     //   Account.createAccount("dasingleton", "David", "Singleton", "abc123");
 
-        Account.updateBilling("dasingleton", "1234567898765432", "456");
+     //   Account.updateBilling("dasingleton", "1234567898765432", "456");
 
-        Account.updatePassword("dasingleton", "123xyz");
+     //   Account.updatePassword("dasingleton", "123xyz");
 
-        Account.printAccount("dasingleton");
+     //   Account.printAccount("dasingleton");
 
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LegacyRentals;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,26 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Manage : Form
+    public partial class ManagePage : Form
     {
-        public Manage()
+
+        Home _homepage;
+
+        public ManagePage(Home h)
         {
             InitializeComponent();
+            _homepage = h;
+        }
+
+        public Home getHomepage()
+        {
+            return _homepage;
         }
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            _homepage.Visible = true;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -30,6 +41,40 @@ namespace WindowsFormsApp1
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            AddCarPage acp = new AddCarPage(this);
+            acp.Visible = true;
+        }
+
+        private void signInButton_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            _homepage.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            ConfirmRequestPage crp = new ConfirmRequestPage(this);
+            crp.Visible = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            ChangeItemPage cip = new ChangeItemPage(this);
+            cip.Visible = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            RemoveItemPage rip = new RemoveItemPage(this);
+            rip.Visible = true;
         }
     }
 }
