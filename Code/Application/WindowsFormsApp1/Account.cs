@@ -21,7 +21,7 @@ class Account
                     }
                     else
                     {
-                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[4].ToString(), row[5].ToString() };
+                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString() };
                     }
                 }
                 rowNumber++;
@@ -39,6 +39,19 @@ class Account
             Console.WriteLine("first name: " + account[2]);
             Console.WriteLine("last name: " + account[3]);
             Console.Read();
+        }
+    }
+
+    public static Boolean signIn(String username, String password)
+    {
+        var account = Account.fetchAccount(username);
+        if (account != null && account[3].Equals(password))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 
