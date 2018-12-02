@@ -17,11 +17,11 @@ class Account
                 {
                     if (row.Count < 5)
                     {
-                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() };
+                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[6].ToString() };
                     }
                     else
                     {
-                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString() };
+                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString() };
                     }
                 }
                 rowNumber++;
@@ -54,7 +54,7 @@ class Account
                 Program.localAccount = account;
                 if (account[7].Equals("admin"))
                 {
-                    //WindowsFormsApp1.Home.
+                    Program.manageButton.Visible = true;
                 }
                 return true;
             }

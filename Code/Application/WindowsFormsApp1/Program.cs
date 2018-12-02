@@ -4,11 +4,14 @@ using System.IO;
 using System.Collections.Generic;
 using System;
 
+
 class Program
 {
 
     public static DataBase database = new DataBase();
     public static List<String> localAccount;
+
+    public static Button manageButton;
 
     static void Main()
     {
@@ -26,6 +29,10 @@ class Program
 
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
-        Application.Run(new WindowsFormsApp1.Home());
+        WindowsFormsApp1.Home home = new WindowsFormsApp1.Home();
+        Application.Run(home);
+        
+        manageButton.Visible = false;
+
     }
 }

@@ -7,6 +7,9 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        
+        //Program.manageButton = this;
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -137,6 +140,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label5;
+
     }
 }
-
