@@ -45,7 +45,7 @@ class Account
     public static Boolean signIn(String username, String password)
     {
         var account = Account.fetchAccount(username);
-        if (account != null && account[3].Equals(password))
+        if (account != null && account[4].Equals(password))
         {
             return true;
         }
