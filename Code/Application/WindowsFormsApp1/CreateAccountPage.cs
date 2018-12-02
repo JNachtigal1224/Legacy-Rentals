@@ -38,11 +38,12 @@ namespace LegacyRentals
             String password = textBox2.Text;
             String firstName = textBox3.Text;
             String lastName = textBox4.Text;
+            String perm = "basic";
             if (username.Equals("") || password.Equals("") || firstName.Equals("") || lastName.Equals(""))
             {
-                System.Windows.Forms.MessageBox.Show("Please fill out all text boxes before creating the acccount.");
+                MessageBox.Show("Please fill out all text boxes before creating the acccount.");
 
-            } else {Account.createAccount(username, firstName, lastName, password);}
+            } else {Account.createAccount(username, firstName, lastName, password, perm);}
 
             this.Visible = false;
             _connectedHomepage.Visible = true;

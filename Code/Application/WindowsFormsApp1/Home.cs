@@ -16,14 +16,15 @@ namespace WindowsFormsApp1
         String _username;
         Boolean isSignedIn = false;
 
-
         public Home()
         {
             InitializeComponent();
-            Program.manageButton = manageButton;
-            //manageButton.Visible = false;
         }
 
+        public void manageShow(Boolean visible)
+        {
+            manageButton.Visible = visible;
+        }
 
         public Boolean getSignedIn()
         {

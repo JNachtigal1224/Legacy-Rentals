@@ -11,7 +11,7 @@ class Program
     public static DataBase database = new DataBase();
     public static List<String> localAccount;
 
-    public static Button manageButton;
+    public static WindowsFormsApp1.Home home;
 
     static void Main()
     {
@@ -29,10 +29,9 @@ class Program
 
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
-        WindowsFormsApp1.Home home = new WindowsFormsApp1.Home();
+        home = new WindowsFormsApp1.Home();
+        home.manageShow(false);
         Application.Run(home);
-        
-        manageButton.Visible = false;
-
+    
     }
 }

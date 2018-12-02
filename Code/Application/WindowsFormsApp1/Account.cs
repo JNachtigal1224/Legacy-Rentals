@@ -15,7 +15,10 @@ class Account
             {
                 if (row[0].Equals(username))
                 {
-                    if (row.Count < 5)
+                    Console.WriteLine(row.Count);
+                    Console.WriteLine(row[5].ToString());
+                    Console.Read();
+                    if (row.Count < 6)
                     {
                         return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[6].ToString() };
                     }
@@ -32,7 +35,7 @@ class Account
 
     public static void printAccount(String username)
     {
-        var account = Account.fetchAccount("dasingleton");
+        var account = Account.fetchAccount(username);
         if (account != null)
         {
             Console.WriteLine("username: " + account[1]);
@@ -54,7 +57,7 @@ class Account
                 Program.localAccount = account;
                 if (account[7].Equals("admin"))
                 {
-                    Program.manageButton.Visible = true;
+                    Program.home.manageShow(false);
                 }
                 return true;
             }
@@ -66,11 +69,11 @@ class Account
         }
     }
 
-    public static void createAccount(String username, String firstName, String lastName, String password)
+    public static void createAccount(String username, String firstName, String lastName, String password, String perm)
     {
         if (Account.fetchAccount(username) == null)
         {
-            database.writeData("users!A2", new List<object>() { username, firstName, lastName, password });
+            database.writeData("users!A2", new List<object>() { username, firstName, lastName, password, perm });
         }
     }
 
