@@ -17,7 +17,7 @@ class Account
                 {
                     if (row.Count < 5)
                     {
-                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString() };
+                        return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString() };
                     }
                     else
                     {
@@ -45,10 +45,16 @@ class Account
     public static Boolean signIn(String username, String password)
     {
         var account = Account.fetchAccount(username);
-        if (account != null && account[4].Equals(password))
+        if (account != null)
         {
-            Program.localAccount = account;
-            return true;
+            Console.WriteLine(account[4]);
+            Console.Read();
+            if (account[4].Equals(password))
+            {
+                Program.localAccount = account;
+                return true;
+            }
+            return false;
         }
         else
         {
