@@ -20,7 +20,9 @@ class Program
 
         //Account.printAccount("dasingleton");
 
-        Car.addCar("0af2489","BMW","PHL","2300","4","true","M5");
+        Manage.addCar("0ag2489","BMW","PHL","230","4","true","M5");
+
+        Car.getCars("All Locations","All Models",2,400);
 
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);

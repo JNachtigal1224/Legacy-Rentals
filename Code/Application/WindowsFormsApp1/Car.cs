@@ -7,14 +7,19 @@ class Car
 
     public static List<String> fetchCar(String carId)
     {
-        int rowNumber = 2;
-        foreach (var row in database.readData("cars!A2:F"))
+        var data = database.readData("cars!A2:F");
+        if (data != null)
         {
-            if (row[0].Equals(carId))
+            int rowNumber = 2;
+            foreach (var row in database.readData("cars!A2:F"))
             {
-                return new List<String> { rowNumber.ToString(), row[0].ToString() };
+                if (row[0].Equals(carId))
+                {
+                    return new List<String> { rowNumber.ToString(), row[0].ToString() };
+                }
+                rowNumber++;
             }
-            rowNumber++;
+            return null;
         }
         return null;
     }
@@ -22,9 +27,9 @@ class Car
     public static List<List<String>> getCars(String loc, String mod, int seating, int maxPrice)
     {
         List<List<String>> cars = new List<List<String>> { };
-        foreach (var row in database.readData("cars!A2:F"))
+        foreach (var row in database.readData("cars!A2:G"))
         {
-            if (row[2].Equals(loc))
+            if (loc.Equals("All Locations") || row[2].Equals(loc))
             {
                 if (mod.Equals("All Models") || row[1].Equals(mod))
                 {
@@ -32,7 +37,7 @@ class Car
                     {
                         if (int.Parse(row[4].ToString()) >= seating)
                         {
-                            if (row[5].Equals("true"))
+                            if (row[5].Equals("TRUE"))
                             {
                                 List<String> info = new List<String> { row[0].ToString(), row[1].ToString(), row[2].ToString(),
                                     row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString()
