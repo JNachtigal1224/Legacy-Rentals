@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LegacyRentals;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -66,12 +67,21 @@ namespace WindowsFormsApp1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
+            this.Visible = false;
+            SignInPage sip = new SignInPage(this);
+            sip.Visible = true;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            CreateAccountPage cap = new CreateAccountPage(this);
+            cap.Visible = true;
         }
     }
 }

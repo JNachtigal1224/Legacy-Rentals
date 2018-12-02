@@ -11,23 +11,17 @@ using WindowsFormsApp1;
 
 namespace LegacyRentals
 {
-    public partial class SignInPage : Form
+    public partial class CreateAccountPage : Form
     {
-
         Home _connectedHomepage;
 
-        public SignInPage(Home h)
+        public CreateAccountPage(Home h)
         {
             InitializeComponent();
             _connectedHomepage = h;
         }
 
-        private void SignInPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void CreateAccountPage_Load(object sender, EventArgs e)
         {
 
         }
