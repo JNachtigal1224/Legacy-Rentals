@@ -8,7 +8,7 @@ class Account
     public static List<String> fetchAccount(String username)
     {
         var data = database.readData("users!A2:F");
-        if (data != null && data.Count > 2)
+        if (data != null)
         {
             int rowNumber = 2;
             foreach (var row in data)
