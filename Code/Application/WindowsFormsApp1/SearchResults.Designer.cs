@@ -33,6 +33,7 @@
             this.signInButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,11 +88,20 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(289, 101);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(215, 212);
+            this.listBox1.TabIndex = 5;
+            // 
             // SearchResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.panel1);
             this.Name = "SearchResults";
@@ -110,5 +120,6 @@
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
