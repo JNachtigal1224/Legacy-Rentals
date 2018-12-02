@@ -47,14 +47,12 @@ class Account
         var account = Account.fetchAccount(username);
         if (account != null)
         {
-            Console.WriteLine(account[4]);
-            Console.Read();
             if (account[4].Equals(password))
             {
                 Program.localAccount = account;
                 if (account[7].Equals("admin"))
                 {
-                    Program.home.manageShow(false);
+                    Program.home.manageShow(true);
                 }
                 return true;
             }

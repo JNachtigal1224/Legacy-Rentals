@@ -21,9 +21,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        public void manageShow(Boolean visible)
+        public void manageShow(Boolean vis)
         {
-            manageButton.Visible = visible;
+            if (vis)
+            {
+                manageButton.Visible = true;
+            }
+            else
+            {
+                manageButton.Visible = false;
+            }
         }
 
         public Boolean getSignedIn()
@@ -75,6 +82,7 @@ namespace WindowsFormsApp1
         private void button1_Click_2(object sender, EventArgs e)
         {
             this.Visible = false;
+            
             ManagePage m = new ManagePage(this);
             m.Visible = true;
         }
