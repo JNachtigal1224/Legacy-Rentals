@@ -27,7 +27,18 @@ namespace LegacyRentals
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            string itemID = textBox2.Text;
+            string name = textBox1.Text;
+            name = name.ToLower();
+            if (name.Equals("car"))
+            {
+                Manage.removeCar(itemID);
+                textBox2.Text = "";
+                textBox1.Text = "";
+            } else
+            {
+                System.Windows.Forms.MessageBox.Show("Database not found, please check your input");
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
