@@ -47,8 +47,6 @@ class Account
         var account = Account.fetchAccount(username);
         if (account != null)
         {
-            Console.WriteLine(account[4]);
-            Console.Read();
             if (account[4].Equals(password))
             {
                 Program.localAccount = account;
