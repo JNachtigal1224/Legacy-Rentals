@@ -1,12 +1,14 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
+using System.Collections.Generic;
 using System;
 
 class Program
 {
 
     public static DataBase database = new DataBase();
+    public static List<String> localAccount;
 
     static void Main()
     {

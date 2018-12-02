@@ -47,6 +47,7 @@ class Account
         var account = Account.fetchAccount(username);
         if (account != null && account[4].Equals(password))
         {
+            Program.localAccount = account;
             return true;
         }
         else
