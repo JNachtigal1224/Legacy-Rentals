@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
+//https://docs.google.com/spreadsheets/d/1YPcGEQC6DMhw6WX2Q13gLFpgPBOgpozA-ywmeZyHONk/edit?usp=sharing
+
 class DataBase
 {
     private readonly static string[] Scopes = { SheetsService.Scope.Spreadsheets };
