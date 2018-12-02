@@ -109,6 +109,12 @@
     <Compile Include="ConfirmRequestPage.Designer.cs">
       <DependentUpon>ConfirmRequestPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignInPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInPage.Designer.cs">
+      <DependentUpon>SignInPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="RemoveItemPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignInPage.resx">
+      <DependentUpon>SignInPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
