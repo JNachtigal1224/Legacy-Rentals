@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LegacyRentals.exe" size="326112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LegacyRentals.exe" size="329184">
       <assemblyIdentity name="LegacyRentals" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/Q6Jl8G3PuPac0D2TWK5c03YzG4BXhi4P43bnQG1p5Q=</dsig:DigestValue>
+        <dsig:DigestValue>hrZIn2UXmHM36Y2z1YpBkl2tdIWUbvlIoYj2FvDaN7s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
