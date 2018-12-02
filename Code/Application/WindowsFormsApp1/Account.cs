@@ -7,7 +7,7 @@ class Account
 
     public static List<String> fetchAccount(String username)
     {
-        var data = database.readData("users!A2:F");
+        var data = database.readData("users!A2:G");
         if (data != null)
         {
             int rowNumber = 2;
@@ -15,10 +15,7 @@ class Account
             {
                 if (row[0].Equals(username))
                 {
-                    Console.WriteLine(row.Count);
-                    Console.WriteLine(row[5].ToString());
-                    Console.Read();
-                    if (row.Count < 6)
+                    if (row.Count < 5)
                     {
                         return new List<String> { rowNumber.ToString(), row[0].ToString(), row[1].ToString(), row[2].ToString(), row[3].ToString(), row[6].ToString() };
                     }
