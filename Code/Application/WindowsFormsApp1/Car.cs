@@ -52,6 +52,16 @@ class Car
         return cars;
     }
 
+    public static List<String> getModels()
+    {
+        List<String> models = new List<String> { };
+        foreach (var row in database.readData("cars!A2:G"))
+        {
+            models.Add(row[1].ToString());
+        }
+        return models;
+    }
+
     public static void addCar(String carId, String model, String loc, String price, String seating, String avail, String name)
     {
         if (Car.fetchCar(carId) == null)
