@@ -52,6 +52,10 @@ class Account
             if (account[4].Equals(password))
             {
                 Program.localAccount = account;
+                if (account[7].Equals("admin"))
+                {
+                    //WindowsFormsApp1.Home.
+                }
                 return true;
             }
             return false;
