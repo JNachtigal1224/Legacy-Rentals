@@ -42,8 +42,6 @@ class Car
                                 List<String> info = new List<String> { row[0].ToString(), row[1].ToString(), row[2].ToString(),
                                     row[3].ToString(), row[4].ToString(), row[5].ToString(), row[6].ToString()
                                 };
-                                Console.WriteLine(row[6].ToString());
-                                Console.Read();
                                 cars.Add(info);
                             }
                         }
