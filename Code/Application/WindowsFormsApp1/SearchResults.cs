@@ -16,12 +16,14 @@ namespace LegacyRentals
 
         Home _homepage;
         Search _connectedSearch;
+        List<List<String>> _carResults;
 
-        public SearchResults(Home h, Search s)
+        public SearchResults(Home h, Search s, List<List<String>> cr)
         {
             InitializeComponent();
             _homepage = h;
             _connectedSearch = s;
+            _carResults = cr;
         }
 
         private void Form1_Load(object sender, EventArgs e)

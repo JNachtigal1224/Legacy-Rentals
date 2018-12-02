@@ -26,6 +26,16 @@ namespace WindowsFormsApp1
                 rentingAvailable = true;
                 label5.Text = ("Hello, " + h.getUsername());
             }
+
+
+            List<string> models = Car.getModels();
+            int size = models.Count();
+            System.Object[] ItemObject = new System.Object[size];
+            for (int i = 0; i <= (size -1); i++)
+            {
+                ItemObject[i] = models[i];
+            }
+            comboBox1.Items.AddRange(ItemObject);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -51,8 +61,16 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            String loc = textBox1.Text;
+            String model = comboBox1.Text;
+            int maxPrice = trackBar1.Value;
+            int seats = trackBar2.Value;
+
             this.Visible = false;
-            SearchResults s = new SearchResults(_homepage, this);
+            List<List<String>> l = new List<List<String>> { };
+            l = Car.getCars(loc, model, seats, maxPrice);
+            SearchResults s = new SearchResults(_homepage, this, l);
             s.Visible = true;
         }
 
@@ -73,6 +91,16 @@ namespace WindowsFormsApp1
         }
 
         private void Search_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
