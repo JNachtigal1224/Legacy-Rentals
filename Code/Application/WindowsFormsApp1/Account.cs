@@ -54,7 +54,7 @@ class Account
                 Program.localAccount = account;
                 if (account[7].Equals("admin"))
                 {
-                    Program.home.manageShow(false);
+                    Program.home.manageShow(true);
                 }
                 return true;
             }

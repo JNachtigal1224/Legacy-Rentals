@@ -31,7 +31,7 @@ class Program
         Application.SetCompatibleTextRenderingDefault(false);
         home = new WindowsFormsApp1.Home();
         home.manageShow(false);
+        
         Application.Run(home);
-    
     }
 }
