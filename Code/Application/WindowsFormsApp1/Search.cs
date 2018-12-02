@@ -15,11 +15,17 @@ namespace WindowsFormsApp1
     {
 
         Home _homepage;
+        Boolean rentingAvailable = false;
 
         public Search(Home h)
         {
             InitializeComponent();
             _homepage = h;
+            if (h.getSignedIn())
+            {
+                rentingAvailable = true;
+                label5.Text = ("Hello, " + h.getUsername());
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -62,6 +68,11 @@ namespace WindowsFormsApp1
         }
 
         private void manageButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Search_Load(object sender, EventArgs e)
         {
 
         }

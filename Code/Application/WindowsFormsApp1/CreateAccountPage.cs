@@ -31,5 +31,31 @@ namespace LegacyRentals
             this.Visible = false;
             _connectedHomepage.Visible = true;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            String username = textBox1.Text;
+            String password = textBox2.Text;
+            String firstName = textBox3.Text;
+            String lastName = textBox4.Text;
+            if (username.Equals("") || password.Equals("") || firstName.Equals("") || lastName.Equals(""))
+            {
+                System.Windows.Forms.MessageBox.Show("Please fill out all text boxes before creating the acccount.");
+
+            } else {Account.createAccount(username, firstName, lastName, password);}
+
+            this.Visible = false;
+            _connectedHomepage.Visible = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

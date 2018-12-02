@@ -41,11 +41,12 @@ namespace LegacyRentals
         private void button5_Click(object sender, EventArgs e)
         {
             String username = textBox1.Text;
-            System.Windows.Forms.MessageBox.Show(username);
             String password = textBox2.Text;
             if (Account.signIn(username, password))
             {
-
+                this.Visible = false;
+                _connectedHomepage.setSignIn(username);
+                _connectedHomepage.Visible = true;
             }
             else
             {
