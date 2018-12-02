@@ -28,14 +28,8 @@ namespace WindowsFormsApp1
             }
 
 
-            List<string> models = Car.getModels();
-            int size = models.Count();
-            System.Object[] ItemObject = new System.Object[size];
-            for (int i = 0; i <= (size -1); i++)
-            {
-                ItemObject[i] = models[i];
-            }
-            comboBox1.Items.AddRange(ItemObject);
+             List<string> models = Car.getModels();
+             comboBox1.DataSource = models;
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -24,6 +24,7 @@ namespace LegacyRentals
             _homepage = h;
             _connectedSearch = s;
             _carResults = cr;
+            listBox1.DataSource = cr;
         }
 
         private void Form1_Load(object sender, EventArgs e)
