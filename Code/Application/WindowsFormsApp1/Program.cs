@@ -20,7 +20,7 @@ class Program
 
         //Account.printAccount("dasingleton");
 
-        Car.addCar();
+        Car.addCar("0af2489","BMW","PHL","2300","4","true","M5");
 
         Application.EnableVisualStyles();
         Application.SetCompatibleTextRenderingDefault(false);
