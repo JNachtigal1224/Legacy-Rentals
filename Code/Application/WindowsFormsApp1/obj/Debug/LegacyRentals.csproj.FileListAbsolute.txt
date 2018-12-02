@@ -141,3 +141,4 @@ C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.SearchResults.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ManagePage.resources
 C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.SignInPage.resources
+C:\Users\David\Documents\GitHub\Legacy-Rentals\Code\Application\WindowsFormsApp1\obj\Debug\LegacyRentals.CreateAccountPage.resources
