@@ -25,6 +25,7 @@ namespace LegacyRentals
             _homepage = h;
             _connectedSearch = s;
             _carResults = cr;
+            listBox1.Items.Clear();
             foreach (var item in cr)
             {
                 listBox1.Items.Add(item[1]+" "+item[6]);

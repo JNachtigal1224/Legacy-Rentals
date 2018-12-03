@@ -190,7 +190,7 @@
             this.trackBar2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(467, 114);
-            this.trackBar2.TabIndex = 9;
+            this.trackBar2.TabIndex = 1;
             // 
             // label4
             // 
