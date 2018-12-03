@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class SearchReults : Form
+    public partial class Search : Form
     {
 
         Home _homepage;
         Boolean rentingAvailable = false;
 
-        public SearchReults(Home h)
+        public Search(Home h)
         {
             InitializeComponent();
             this.CenterToScreen();

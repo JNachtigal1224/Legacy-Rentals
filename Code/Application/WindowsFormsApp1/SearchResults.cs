@@ -15,10 +15,10 @@ namespace LegacyRentals
     {
 
         Home _homepage;
-        SearchReults _connectedSearch;
+        Search _connectedSearch;
         List<List<String>> _carResults;
 
-        public SearchResults(Home h, SearchReults s, List<List<String>> cr)
+        public SearchResults(Home h, Search s, List<List<String>> cr)
         {
             InitializeComponent();
             _homepage = h;
