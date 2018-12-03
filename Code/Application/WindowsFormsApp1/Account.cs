@@ -64,7 +64,7 @@ class Account
         }
     }
 
-        public static void createAccount(String username, String firstName, String lastName, String password, String perm)
+    public static void createAccount(String username, String firstName, String lastName, String password, String perm)
     {
         if (Account.fetchAccount(username) == null)
         {
