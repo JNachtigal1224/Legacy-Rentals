@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Home : Form
     {
-        public String _username;
+        public String _username = "Guest";
         public Boolean isSignedIn = false;
         public Point loc;
         private Search search;
@@ -65,7 +65,7 @@ namespace WindowsFormsApp1
         {
             _username = null;
             isSignedIn = false;
-            label5.Text = "";
+            label5.Text = "Guest";
 
             Program.localAccount = null;
 
@@ -104,7 +104,7 @@ namespace WindowsFormsApp1
 
             if (search == null)
             {
-                search= new Search(this);
+                search = new Search(this);
             }
 
             if (isSignedIn)
@@ -115,10 +115,12 @@ namespace WindowsFormsApp1
             {
                 search.createShow(true);
             }
+
             search.refreshContent();
+
             search.Visible = true;
             this.Visible = false;
-
+            
         }
 
         private void button1_Click_2(object sender, EventArgs e)

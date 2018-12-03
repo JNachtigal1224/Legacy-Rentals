@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
             }
             else
             {
+                label5.Text = "Hello, Guest";
                 signInButton.Text = "SIGN IN";
             }
 
@@ -97,7 +98,7 @@ namespace WindowsFormsApp1
 
         public void setSignOut()
         {
-            label5.Text = "";
+            label5.Text = "Guest";
 
             _homepage.setSignOut();
 

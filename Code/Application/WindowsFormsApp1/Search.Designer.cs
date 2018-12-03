@@ -97,14 +97,16 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(1032, 45);
             this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 32);
+            this.label5.Size = new System.Drawing.Size(154, 28);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Hello, User";
+            this.label5.Text = "Hello, Guest";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // signInButton
@@ -114,7 +116,7 @@
             this.signInButton.BackColor = System.Drawing.Color.DodgerBlue;
             this.signInButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.Color.White;
-            this.signInButton.Location = new System.Drawing.Point(1710, 12);
+            this.signInButton.Location = new System.Drawing.Point(1720, 12);
             this.signInButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(199, 100);
@@ -147,6 +149,7 @@
             // 
             // trackBar1
             // 
+            this.trackBar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.trackBar1.Location = new System.Drawing.Point(843, 453);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.trackBar1.Name = "trackBar1";
@@ -155,18 +158,18 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(517, 477);
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Location = new System.Drawing.Point(679, 473);
             this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(314, 32);
+            this.label2.Size = new System.Drawing.Size(153, 32);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Max Price (Thousands):";
+            this.label2.Text = "Max Price:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.Location = new System.Drawing.Point(704, 575);
             this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label3.Name = "label3";
@@ -176,6 +179,7 @@
             // 
             // trackBar2
             // 
+            this.trackBar2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.trackBar2.Location = new System.Drawing.Point(843, 575);
             this.trackBar2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.trackBar2.Name = "trackBar2";
@@ -184,7 +188,7 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.Location = new System.Drawing.Point(731, 680);
             this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
@@ -194,6 +198,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(843, 672);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -204,6 +209,8 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.Location = new System.Drawing.Point(989, 751);
             this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button1.Name = "button1";
@@ -226,7 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(240F, 240F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(2133, 1073);
             this.Controls.Add(this.comboBox2);
