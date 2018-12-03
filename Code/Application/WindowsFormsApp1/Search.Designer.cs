@@ -44,6 +44,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -150,11 +151,15 @@
             // trackBar1
             // 
             this.trackBar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.trackBar1.LargeChange = 1;
             this.trackBar1.Location = new System.Drawing.Point(843, 453);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.trackBar1.Maximum = 15;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(477, 114);
-            this.trackBar1.TabIndex = 6;
+            this.trackBar1.TabIndex = 1;
+            this.trackBar1.Value = 5;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // label2
             // 
@@ -229,6 +234,17 @@
             this.comboBox2.Size = new System.Drawing.Size(492, 39);
             this.comboBox2.TabIndex = 13;
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(1331, 462);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "$800";
+            // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(240F, 240F);
@@ -236,6 +252,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(2133, 1073);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
@@ -280,5 +297,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label6;
     }
 }

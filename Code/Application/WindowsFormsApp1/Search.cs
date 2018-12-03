@@ -141,5 +141,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label6.Text = "$"+(trackBar1.Value * 100).ToString();
+        }
     }
 }
