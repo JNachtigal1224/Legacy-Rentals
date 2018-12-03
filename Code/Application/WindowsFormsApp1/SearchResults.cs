@@ -47,10 +47,49 @@ namespace LegacyRentals
 
         }
 
+        public void setSignOut()
+        {
+            label5.Text = "Guest";
+
+            _homepage.setSignOut();
+
+            signInButton.Text = "SIGN IN";
+            signInButton.Location = _homepage.loc;
+        }
         private void signInButton_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            _homepage.Visible = true;
+            if (signInButton.Text == "SIGN OUT")
+            {
+                setSignOut();
+            }
+            else
+            {
+                this.Visible = false;
+                SignInPage sip = new SignInPage(_homepage);
+                sip.Visible = true;
+            }
+        }
+
+        public void refreshContent(List<List<String>> cr)
+        {
+            if (_homepage.getSignedIn())
+            {
+                label5.Text = ("Hello, " + _homepage.getUsername());
+                signInButton.Text = "SIGN OUT";
+            }
+            else
+            {
+                label5.Text = "Hello, Guest";
+                signInButton.Text = "SIGN IN";
+            }
+
+            listBox1.Items.Clear();
+            _carResults = cr;
+            foreach (var item in cr)
+            {
+                listBox1.Items.Add(item[1] + " " + item[6]);
+            }
+
         }
 
         private void searchButton_Click(object sender, EventArgs e)

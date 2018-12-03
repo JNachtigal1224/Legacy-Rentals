@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
 
         Home _homepage;
         Boolean rentingAvailable = false;
+        private SearchResults s;
 
         public Search(Home h)
         {
@@ -72,11 +73,16 @@ namespace WindowsFormsApp1
             int maxPrice = trackBar1.Value * 1000;
             int seats = trackBar2.Value;
 
-            this.Visible = false;
             List<List<String>> l = new List<List<String>> { };
             l = Car.getCars(loc, model, seats, maxPrice);
-            SearchResults s = new SearchResults(_homepage, this, l);
+            if (s == null)
+            {
+                SearchResults s = new SearchResults(_homepage, this, l);
+            }
+            s.refreshContent(l);
             s.Visible = true;
+            this.Visible = false;
+            
         }
 
         private void searchButton_Click(object sender, EventArgs e)
