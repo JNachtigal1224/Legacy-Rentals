@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateAccountPage));
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -152,8 +153,6 @@
             this.panel1.Size = new System.Drawing.Size(2143, 128);
             this.panel1.TabIndex = 23;
             // 
-           
-            // 
             // homeButton
             // 
             this.homeButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "CreateAccountPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
