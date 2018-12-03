@@ -1,5 +1,7 @@
 # Legacy-Rentals
 
+https://docs.google.com/presentation/d/1ohQ2Og3zAgeX_P2mC1RUgP2c7MHCQZmdZew7Zh2rD4A/edit?usp=sharing
+
 ### Back End Change Log (dasingleton)
 
 11/29/2018 10:00pm
