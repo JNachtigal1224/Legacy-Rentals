@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="LegacyRentals.exe.manifest" size="8345">
+    <dependentAssembly dependencyType="install" codebase="LegacyRentals.exe.manifest" size="8344">
       <assemblyIdentity name="LegacyRentals.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/mmbeowzN2QNcw08xncG/uDtwqeJ95aoBvNFg4FEsGo=</dsig:DigestValue>
+        <dsig:DigestValue>CkODv8fgBgdwaQ218IUHuiET7CEC/XKQsbAi6sn86Hs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
