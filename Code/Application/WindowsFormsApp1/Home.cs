@@ -16,11 +16,13 @@ namespace WindowsFormsApp1
         public String _username;
         public Boolean isSignedIn = false;
         public Point loc;
+        private Search search;
 
         public Home()
         {
             InitializeComponent();
             loc = signButton.Location;
+            this.CenterToScreen();
         }
 
         public void manageShow(Boolean vis)
@@ -100,17 +102,21 @@ namespace WindowsFormsApp1
         private void button1_Click_1(object sender, EventArgs e)
         {
 
-            this.Visible = false;
-            Search s = new Search(this);
+            if (search == null)
+            {
+                search= new Search(this);
+            }
+
             if (isSignedIn)
             {
-                s.createShow(false);
+                search.createShow(false);
             }
             else
             {
-                s.createShow(true);
+                search.createShow(true);
             }
-            s.Visible = true;
+            search.Visible = true;
+            this.Visible = false;
 
         }
 
