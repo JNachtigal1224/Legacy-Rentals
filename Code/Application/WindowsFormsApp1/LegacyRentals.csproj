@@ -115,12 +115,6 @@
     <Compile Include="CreateAccountPage.Designer.cs">
       <DependentUpon>CreateAccountPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="CarPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CarPage.Designer.cs">
-      <DependentUpon>CarPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="SignInPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +163,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddCarPage.resx">
       <DependentUpon>AddCarPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CarPage.resx">
-      <DependentUpon>CarPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeItemPage.resx">
       <DependentUpon>ChangeItemPage.cs</DependentUpon>

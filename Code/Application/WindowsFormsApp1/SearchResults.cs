@@ -15,21 +15,16 @@ namespace LegacyRentals
     {
 
         Home _homepage;
-        SearchReults _connectedSearch;
+        Search _connectedSearch;
         List<List<String>> _carResults;
 
-        public SearchResults(Home h, SearchReults s, List<List<String>> cr)
+        public SearchResults(Home h, Search s, List<List<String>> cr)
         {
             InitializeComponent();
             _homepage = h;
             _connectedSearch = s;
             _carResults = cr;
             listBox1.DataSource = cr;
-           /* for(int i = 0; i < listBox1.Items.Count; i++)
-            {
-                listBox1.Items.Item
-            }
-            */
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,26 +53,6 @@ namespace LegacyRentals
         {
             this.Visible = false;
             _connectedSearch.Visible = true;
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           List<String> test = new List<string> { };
-           test = listBox1.SelectedItem as List<string>;
-            //System.Windows.Forms.MessageBox.Show(test[0]);
-            CarPage c = new CarPage(_homepage, this, test);
-            this.Visible = false;
-            c.Visible = true;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

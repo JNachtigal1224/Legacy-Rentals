@@ -74,7 +74,7 @@ namespace WindowsFormsApp1
         {
 
             this.Visible = false;
-            SearchReults s = new SearchReults(this);
+            Search s = new Search(this);
             s.Visible = true;
 
         }
