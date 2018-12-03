@@ -56,7 +56,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.signInButton);
             this.panel1.Controls.Add(this.button4);
@@ -276,6 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox7);
@@ -293,6 +294,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "AddCarPage";
             this.Text = "Add Car";
             this.Load += new System.EventHandler(this.Form1_Load);
