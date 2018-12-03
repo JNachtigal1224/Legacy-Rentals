@@ -59,7 +59,7 @@ namespace LegacyRentals
             String carId = _carInfo[0];
             String username = Program.localAccount[1];
             String requestId = carId + username;
-            Manage.request(requestId, carId, username);
+            Manage.addRequest(requestId, carId, username);
         }
     }
 }
