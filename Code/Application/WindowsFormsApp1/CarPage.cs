@@ -24,6 +24,9 @@ namespace LegacyRentals
             _connectedSearchResults = s;
             _carInfo = ci;
 
+            if (!_homepage.getSignedIn()) {
+                button1.Enabled = false;
+            }
 
             textBox1.Text = _carInfo[6];
             textBox2.Text = _carInfo[0];
@@ -49,6 +52,14 @@ namespace LegacyRentals
         {
             this.Visible = false;
             _homepage.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String carId = _carInfo[0];
+            String username = Program.localAccount[1];
+            String requestId = carId + username;
+            Manage.request(requestId, carId, username);
         }
     }
 }
