@@ -67,8 +67,8 @@ namespace LegacyRentals
 
         private void button1_Click(object sender, EventArgs e)
         {
-           List<String> test = new List<string> { };
-           test = listBox1.SelectedItem as List<string>;
+           List<String> test = new List<String> { };
+           test = listBox1.SelectedItem as List<String>;
             //System.Windows.Forms.MessageBox.Show(test[0]);
             CarPage c = new CarPage(_homepage, this, test);
             this.Visible = false;

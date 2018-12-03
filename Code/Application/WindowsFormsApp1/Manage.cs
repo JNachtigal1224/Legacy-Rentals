@@ -15,4 +15,9 @@ class Manage
         Car.removeCar(carId);
     }
 
+    public static void request(String requestId, String carId, String username)
+    {
+        database.writeData("request!A2", new List<object>() { requestId, carId, username });
+    }
+
 }

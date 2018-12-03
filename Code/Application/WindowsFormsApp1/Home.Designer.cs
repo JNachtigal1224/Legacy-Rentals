@@ -132,6 +132,8 @@
             // 
             // searchButton
             // 
+            this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.searchButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.searchButton.Location = new System.Drawing.Point(838, 156);
             this.searchButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.searchButton.Name = "searchButton";
