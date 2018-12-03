@@ -65,6 +65,19 @@ class Car
         return models;
     }
 
+    public static List<String> getLocations()
+    {
+        List<String> locations = new List<String> { "All Locations" };
+        foreach (var row in database.readData("cars!A2:G"))
+        {
+            if (locations.Exists(s => s.Contains(row[2].ToString())) == false)
+            {
+                locations.Add(row[2].ToString());
+            }
+        }
+        return locations;
+    }
+
     public static void addCar(String carId, String model, String loc, String price, String seating, String avail, String name)
     {
         if (Car.fetchCar(carId) == null)

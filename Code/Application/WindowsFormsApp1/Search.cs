@@ -22,24 +22,24 @@ namespace WindowsFormsApp1
             InitializeComponent();
             this.CenterToScreen();
             _homepage = h;
-            if (h.getSignedIn())
+            this.refreshContent();
+        }
+
+        public void refreshContent()
+        {
+            if (_homepage.getSignedIn())
             {
                 rentingAvailable = true;
-                label5.Text = ("Hello, " + h.getUsername());
-            }
-
-            if (Program.localAccount == null)
-            {
-                signInButton.Text = "SIGN IN";
+                label5.Text = ("Hello, " + _homepage.getUsername());
+                signInButton.Text = "SIGN OUT";
             }
             else
             {
-                signInButton.Text = "SIGN OUT";
+                signInButton.Text = "SIGN IN";
             }
 
-
-             List<string> models = Car.getModels();
-             comboBox1.DataSource = models;
+            comboBox1.DataSource = Car.getModels();
+            comboBox2.DataSource = Car.getLocations();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
 
-            String loc = textBox1.Text;
+            String loc = comboBox2.Text;
             String model = comboBox1.Text;
             int maxPrice = trackBar1.Value * 1000;
             int seats = trackBar2.Value;

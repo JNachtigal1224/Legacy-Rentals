@@ -115,6 +115,7 @@ namespace WindowsFormsApp1
             {
                 search.createShow(true);
             }
+            search.refreshContent();
             search.Visible = true;
             this.Visible = false;
 
