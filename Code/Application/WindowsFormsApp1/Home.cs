@@ -13,9 +13,9 @@ namespace WindowsFormsApp1
 {
     public partial class Home : Form
     {
-        String _username;
-        Boolean isSignedIn = false;
-        Point loc;
+        public String _username;
+        public Boolean isSignedIn = false;
+        public Point loc;
 
         public Home()
         {
@@ -102,6 +102,14 @@ namespace WindowsFormsApp1
 
             this.Visible = false;
             Search s = new Search(this);
+            if (isSignedIn)
+            {
+                s.createShow(false);
+            }
+            else
+            {
+                s.createShow(true);
+            }
             s.Visible = true;
 
         }
