@@ -24,7 +24,6 @@ class Program
         Manage.addCar("0uo9820", "Tesla", "PHL", "790", "5", "true", "Model S");
         Manage.addCar("0xu7264", "Tesla", "NYC", "310", "5", "true", "Model 3");
 
-
         Car.getCars("All Locations", "All Models", 2, 400);
 
         Application.EnableVisualStyles();

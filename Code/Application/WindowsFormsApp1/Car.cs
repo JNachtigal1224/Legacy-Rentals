@@ -57,7 +57,10 @@ class Car
         List<String> models = new List<String> { };
         foreach (var row in database.readData("cars!A2:G"))
         {
-            models.Add(row[1].ToString());
+            if (models.Exists(s => s.Contains(row[1].ToString()))==false)
+            {
+                models.Add(row[1].ToString());
+            }
         }
         return models;
     }

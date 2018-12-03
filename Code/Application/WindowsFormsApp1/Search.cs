@@ -27,6 +27,15 @@ namespace WindowsFormsApp1
                 label5.Text = ("Hello, " + h.getUsername());
             }
 
+            if (Program.localAccount == null)
+            {
+                signInButton.Text = "SIGN IN";
+            }
+            else
+            {
+                signInButton.Text = "SIGN OUT";
+            }
+
 
              List<string> models = Car.getModels();
              comboBox1.DataSource = models;
@@ -73,10 +82,45 @@ namespace WindowsFormsApp1
 
         }
 
+        public void createShow(Boolean vis)
+        {
+            if (vis)
+            {
+                createButton.Visible = true;
+            }
+            else
+            {
+                createButton.Visible = false;
+            }
+        }
+
+        public void setSignOut()
+        {
+            label5.Text = "";
+
+            _homepage.setSignOut();
+
+            signInButton.Text = "SIGN IN";
+            signInButton.Location = _homepage.loc;
+
+            createButton.Visible = true;
+        }
+
         private void signInButton_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            _homepage.Visible = true;
+            if (signInButton.Text == "SIGN OUT")
+            {
+                setSignOut();
+            }
+            else
+            {
+                this.Visible = false;
+                SignInPage sip = new SignInPage(_homepage);
+                sip.Visible = true;
+            }
+
+            //this.Visible = false;
+            //_homepage.Visible = true;
         }
 
         private void manageButton_Click(object sender, EventArgs e)

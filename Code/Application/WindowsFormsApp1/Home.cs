@@ -13,12 +13,14 @@ namespace WindowsFormsApp1
 {
     public partial class Home : Form
     {
-        String _username;
-        Boolean isSignedIn = false;
+        public String _username;
+        public Boolean isSignedIn = false;
+        public Point loc;
 
         public Home()
         {
             InitializeComponent();
+            loc = signButton.Location;
         }
 
         public void manageShow(Boolean vis)
@@ -48,6 +50,31 @@ namespace WindowsFormsApp1
             _username = username;
             isSignedIn = true;
             label5.Text = "Hello, " + username;
+
+            signButton.Text = "SIGN OUT";
+
+            signButton.Location = createButton.Location;
+
+            createButton.Visible = false;
+
+        }
+
+        public void setSignOut()
+        {
+            _username = null;
+            isSignedIn = false;
+            label5.Text = "";
+
+            Program.localAccount = null;
+
+            manageButton.Visible = false;
+
+            signButton.Text = "SIGN IN";
+
+            signButton.Location = loc;
+
+            createButton.Visible = true;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -75,6 +102,14 @@ namespace WindowsFormsApp1
 
             this.Visible = false;
             Search s = new Search(this);
+            if (isSignedIn)
+            {
+                s.createShow(false);
+            }
+            else
+            {
+                s.createShow(true);
+            }
             s.Visible = true;
 
         }
@@ -99,9 +134,16 @@ namespace WindowsFormsApp1
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            this.Visible = false;
-            SignInPage sip = new SignInPage(this);
-            sip.Visible = true;
+            if(signButton.Text=="SIGN OUT")
+            {
+                this.setSignOut();
+            }
+            else
+            {
+                this.Visible = false;
+                SignInPage sip = new SignInPage(this);
+                sip.Visible = true;
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
