@@ -128,6 +128,7 @@
             // 
             // homeButton
             // 
+            this.homeButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeButton.Location = new System.Drawing.Point(32, 7);
             this.homeButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.homeButton.Name = "homeButton";

@@ -17,6 +17,7 @@ namespace LegacyRentals
         Home _homepage;
         Search _connectedSearch;
         List<List<String>> _carResults;
+        List<List<String>> indexs = new List<List<String>>{ };
 
         public SearchResults(Home h, Search s, List<List<String>> cr)
         {
@@ -65,10 +66,7 @@ namespace LegacyRentals
 
         private void button1_Click(object sender, EventArgs e)
         {
-           List<String> test = new List<String> { };
-           test = listBox1.SelectedItem as List<String>;
-            //System.Windows.Forms.MessageBox.Show(test[0]);
-            CarPage c = new CarPage(_homepage, this, test);
+            CarPage c = new CarPage(_homepage, this, _carResults[listBox1.SelectedIndex]);
             this.Visible = false;
             c.Visible = true;
         }
