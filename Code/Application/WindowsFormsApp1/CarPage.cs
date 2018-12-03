@@ -60,6 +60,9 @@ namespace LegacyRentals
             String username = Program.localAccount[1];
             String requestId = carId + username;
             Manage.addRequest(requestId, carId, username);
+
+            this.Visible = false;
+            _connectedSearchResults.getConnectedSearch().Visible = true;
         }
     }
 }
