@@ -50,7 +50,7 @@ namespace LegacyRentals
             }
             else
             {
-                System.Windows.Forms.MessageBox.Show("Your username or password is not found in the database. " +
+                MessageBox.Show("Your username or password is not found in the database. " +
                     "If you have not created an account yet please select CREATE ACCOUNT");
             }
         }

@@ -33,13 +33,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.createButton = new System.Windows.Forms.Button();
+            this.signButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.manageButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,23 +48,40 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.createButton);
+            this.panel1.Controls.Add(this.signButton);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.manageButton);
             this.panel1.Controls.Add(this.homeButton);
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button2
+            // label5
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Name = "label5";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // createButton
+            // 
+            this.createButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.createButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.createButton, "createButton");
+            this.createButton.ForeColor = System.Drawing.Color.White;
+            this.createButton.Name = "createButton";
+            this.createButton.UseVisualStyleBackColor = false;
+            this.createButton.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // signButton
+            // 
+            this.signButton.BackColor = System.Drawing.Color.DodgerBlue;
+            this.signButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.signButton, "signButton");
+            this.signButton.ForeColor = System.Drawing.Color.White;
+            this.signButton.Name = "signButton";
+            this.signButton.UseVisualStyleBackColor = false;
+            this.signButton.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -97,23 +114,6 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Name = "label5";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
             // Home
             // 
             resources.ApplyResources(this, "$this");
@@ -137,8 +137,8 @@
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button manageButton;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button signButton;
+        private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.Label label5;
 
     }
