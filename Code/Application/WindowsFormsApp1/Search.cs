@@ -70,16 +70,15 @@ namespace WindowsFormsApp1
 
             String loc = comboBox2.Text;
             String model = comboBox1.Text;
-            int maxPrice = trackBar1.Value * 1000;
+            int maxPrice = (trackBar1.Value * 100);
             int seats = trackBar2.Value;
 
-            List<List<String>> l = new List<List<String>> { };
-            l = Car.getCars(loc, model, seats, maxPrice);
+            List<List<String>> carList = Car.getCars(loc, model, seats, maxPrice);
             if (s == null)
             {
-                s = new SearchResults(_homepage, this, l);
+                s = new SearchResults(_homepage, this, carList);
             }
-            s.refreshContent(l);
+            s.refreshContent(carList);
             s.Visible = true;
             this.Visible = false;
             
