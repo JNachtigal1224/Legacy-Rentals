@@ -111,6 +111,7 @@
             // 
             // manageButton
             // 
+            this.manageButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageButton.Location = new System.Drawing.Point(294, 8);
             this.manageButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.manageButton.Name = "manageButton";
@@ -122,6 +123,7 @@
             // 
             // homeButton
             // 
+            this.homeButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 6.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeButton.Location = new System.Drawing.Point(32, 8);
             this.homeButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.homeButton.Name = "homeButton";

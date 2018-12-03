@@ -106,7 +106,6 @@ namespace WindowsFormsApp1
             {
                 search = new Search(this);
             }
-
             if (isSignedIn)
             {
                 search.createShow(false);
@@ -115,12 +114,9 @@ namespace WindowsFormsApp1
             {
                 search.createShow(true);
             }
-
             search.refreshContent();
-
             search.Visible = true;
             this.Visible = false;
-            
         }
 
         private void button1_Click_2(object sender, EventArgs e)
