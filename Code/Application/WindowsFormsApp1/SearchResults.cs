@@ -111,9 +111,13 @@ namespace LegacyRentals
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CarPage c = new CarPage(_homepage, this, _carResults[listBox1.SelectedIndex]);
-            this.Visible = false;
-            c.Visible = true;
+            if (listBox1.SelectedItem != null)
+            {
+                CarPage c = new CarPage(_homepage, this, _carResults[listBox1.SelectedIndex]);
+                this.Visible = false;
+                c.Visible = true;
+            }
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
