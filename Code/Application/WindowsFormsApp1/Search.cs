@@ -77,7 +77,7 @@ namespace WindowsFormsApp1
             l = Car.getCars(loc, model, seats, maxPrice);
             if (s == null)
             {
-                SearchResults s = new SearchResults(_homepage, this, l);
+                s = new SearchResults(_homepage, this, l);
             }
             s.refreshContent(l);
             s.Visible = true;
