@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Search : Form
+    public partial class SearchReults : Form
     {
 
         Home _homepage;
         Boolean rentingAvailable = false;
 
-        public Search(Home h)
+        public SearchReults(Home h)
         {
             InitializeComponent();
             _homepage = h;
@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
 
             String loc = textBox1.Text;
             String model = comboBox1.Text;
-            int maxPrice = trackBar1.Value;
+            int maxPrice = trackBar1.Value * 1000;
             int seats = trackBar2.Value;
 
             this.Visible = false;
