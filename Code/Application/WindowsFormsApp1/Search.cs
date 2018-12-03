@@ -20,6 +20,7 @@ namespace WindowsFormsApp1
         public SearchReults(Home h)
         {
             InitializeComponent();
+            this.CenterToScreen();
             _homepage = h;
             if (h.getSignedIn())
             {
@@ -58,8 +59,8 @@ namespace WindowsFormsApp1
 
         private void homeButton_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
             _homepage.Visible = true;
+            this.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
