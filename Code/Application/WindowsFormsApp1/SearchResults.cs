@@ -32,6 +32,11 @@ namespace LegacyRentals
             }
         }
 
+        public Search getConnectedSearch()
+        {
+            return _connectedSearch;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
