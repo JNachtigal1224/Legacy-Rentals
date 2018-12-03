@@ -68,7 +68,7 @@ class Account
     {
         if (Account.fetchAccount(username) == null)
         {
-            database.writeData("users!A2", new List<object>() { username, firstName, lastName, password, perm });
+            database.writeData("users!A2", new List<object>() { username, firstName, lastName, password, "", "", perm });
         }
     }
 
