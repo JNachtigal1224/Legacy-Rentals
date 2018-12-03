@@ -119,9 +119,6 @@ namespace WindowsFormsApp1
                 SignInPage sip = new SignInPage(_homepage);
                 sip.Visible = true;
             }
-
-            //this.Visible = false;
-            //_homepage.Visible = true;
         }
 
         private void manageButton_Click(object sender, EventArgs e)

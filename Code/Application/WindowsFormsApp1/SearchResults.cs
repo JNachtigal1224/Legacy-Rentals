@@ -24,12 +24,10 @@ namespace LegacyRentals
             _homepage = h;
             _connectedSearch = s;
             _carResults = cr;
-            listBox1.DataSource = cr;
-           /* for(int i = 0; i < listBox1.Items.Count; i++)
+            foreach (var item in cr)
             {
-                listBox1.Items.Item
+                listBox1.Items.Add(item[1]+" "+item[6]);
             }
-            */
         }
 
         private void Form1_Load(object sender, EventArgs e)
