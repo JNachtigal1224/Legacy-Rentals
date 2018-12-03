@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Search
+    partial class SearchReults
     {
         /// <summary>
         /// Required designer variable.
